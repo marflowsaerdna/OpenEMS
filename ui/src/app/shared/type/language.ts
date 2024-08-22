@@ -14,6 +14,8 @@ import fr from "src/assets/i18n/fr.json";
 import ja from "src/assets/i18n/ja.json";
 import nl from "src/assets/i18n/nl.json";
 
+import { environment } from 'src/environments';
+
 interface Translation {
     [key: string]: string | Translation;
 }
@@ -40,7 +42,7 @@ export class Language {
     public static readonly JA: Language = new Language("Japanese", "ja", "ja", ja, localJA);
 
     public static readonly ALL = [Language.DE, Language.EN, Language.CZ, Language.NL, Language.ES, Language.FR, Language.JA];
-    public static readonly DEFAULT = Language.DE;
+    public static readonly DEFAULT = Language.getByKey(environment.defaultLanguage);
 
     constructor(
         public readonly title: string,
