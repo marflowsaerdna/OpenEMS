@@ -85,6 +85,7 @@
 	bnd.identity;id='io.openems.edge.controller.ess.reactivepowervoltagecharacteristic',\
 	bnd.identity;id='io.openems.edge.controller.ess.selltogridlimit',\
 	bnd.identity;id='io.openems.edge.controller.ess.standby',\
+	bnd.identity;id='io.openems.edge.controller.ess.timeframe',\
 	bnd.identity;id='io.openems.edge.controller.ess.timeofusetariff',\
 	bnd.identity;id='io.openems.edge.controller.evcs',\
 	bnd.identity;id='io.openems.edge.controller.evcs.fixactivepower',\
@@ -113,6 +114,7 @@
 	bnd.identity;id='io.openems.edge.ess.core',\
 	bnd.identity;id='io.openems.edge.ess.fenecon.commercial40',\
 	bnd.identity;id='io.openems.edge.ess.generic',\
+	bnd.identity;id='io.openems.edge.ess.mr.gridcon',\
 	bnd.identity;id='io.openems.edge.ess.samsung',\
 	bnd.identity;id='io.openems.edge.ess.sma',\
 	bnd.identity;id='io.openems.edge.evcs.alpitronic.hypercharger',\
@@ -244,6 +246,7 @@
 	io.openems.edge.controller.ess.cycle;version=snapshot,\
 	io.openems.edge.controller.ess.delaycharge;version=snapshot,\
 	io.openems.edge.controller.ess.delayedselltogrid;version=snapshot,\
+	io.openems.edge.controller.ess.timeframe;version=snapshot,\
 	io.openems.edge.controller.ess.emergencycapacityreserve;version=snapshot,\
 	io.openems.edge.controller.ess.fixactivepower;version=snapshot,\
 	io.openems.edge.controller.ess.fixstateofcharge;version=snapshot,\
