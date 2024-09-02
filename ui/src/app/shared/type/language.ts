@@ -14,7 +14,7 @@ import fr from "src/assets/i18n/fr.json";
 import ja from "src/assets/i18n/ja.json";
 import nl from "src/assets/i18n/nl.json";
 
-import { environment } from 'src/environments';
+import { environment } from "src/environments";
 
 interface Translation {
     [key: string]: string | Translation;
