@@ -613,7 +613,7 @@ export abstract class AbstractHistoryChart implements OnInit, OnDestroy {
    * @param title the YAxisType
    * @returns the tooltips suffix
    */
-  public static getToolTipsSuffix(label: any, value: number, format: string, title: YAxisType, chartType: 'bar' | 'line', language: string, translate: TranslateService, locale: string, config: EdgeConfig): string {
+  public static getToolTipsSuffix(label: any, value: number, format: string, title: YAxisType, chartType: "bar" | "line", language: string, translate: TranslateService, locale: string, config: EdgeConfig): string {
     let tooltipsLabel: string | null = null;
     switch (title) {
       case YAxisType.RELAY: {

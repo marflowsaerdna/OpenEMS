@@ -62,7 +62,7 @@ export class OeFormlyViewTester {
         // Read or generate name
         let name: string;
         if (typeof (field.name) === "function") {
-          name = field.name(tmp.rawValue, 'de');
+          name = field.name(tmp.rawValue, "de");
         } else {
           name = field.name;
         }
@@ -173,7 +173,7 @@ export class OeFormlyViewTester {
 
     // Apply converter
     const value: string = field.converter
-      ? field.converter(rawValue, 'de')
+      ? field.converter(rawValue, "de")
       : rawValue === null ? null : "" + rawValue;
 
     return {
@@ -236,7 +236,7 @@ export class OeChartTester {
     });
 
     // Fill Data
-    const configuration = AbstractHistoryChart.fillChart(chartType, chartData, 'de', channelData, channels.energyChannelWithValues);
+    const configuration = AbstractHistoryChart.fillChart(chartType, chartData, "de", channelData, channels.energyChannelWithValues);
     const data: OeChartTester.Dataset.Data[] = OeChartTester.convertChartDatasetsToDatasets(configuration.datasets);
     const labels: OeChartTester.Dataset.LegendLabel = OeChartTester.convertChartLabelsToLegendLabels(configuration.labels);
     const options: OeChartTester.Dataset.Option = OeChartTester.convertChartDataToOptions(chartData, chartType, testContext, channels, testContext.translate.currentLang, config, configuration.datasets, xAxisScalingType, configuration.labels);

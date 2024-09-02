@@ -310,7 +310,7 @@ export class Utils {
    * @returns converted value
    */
   public static CONVERT_TO_WATTHOURS = (value: number, locale: string): string => {
-    return formatNumber(value, locale, "1.0-1") + ' Wh';
+    return formatNumber(value, locale, "1.0-1") + " Wh";
   };
 
   /**
@@ -321,7 +321,7 @@ export class Utils {
    * @returns converted value
    */
   public static CONVERT_TO_KILO_WATTHOURS = (value: number, locale: string): string => {
-    return formatNumber(Utils.divideSafely(value, 1000), locale, "1.0-1") + ' kWh';
+    return formatNumber(Utils.divideSafely(value, 1000), locale, "1.0-1") + " kWh";
   };
 
   /**
@@ -402,7 +402,7 @@ export class Utils {
    */
   public static CONVERT_PRICE_TO_CENT_PER_KWH = (decimal: number, label: string, locale: string) => {
     return (value: number | null): string =>
-      (!value ? "-" : formatNumber(value / 10, locale, "1.0-" + decimal)) + ' ' + label;
+      (!value ? "-" : formatNumber(value / 10, locale, "1.0-" + decimal)) + " " + label;
   };
 
   /**
