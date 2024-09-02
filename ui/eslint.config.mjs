@@ -49,6 +49,7 @@ export default [{
     },
 
     "rules": {
+        "curly": "error",
         "unused-imports/no-unused-imports": "error",
         "@typescript-eslint/explicit-member-accessibility": [
           "error",
