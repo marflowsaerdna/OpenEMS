@@ -71,7 +71,7 @@
     "@types/jasmine": "~4.3.6",
     "@types/jasminewd2": "~2.0.13",
     "@types/json-schema": "^7.0.15",
-    "@types/node": "^20.12.6",
+    "@types/node": "^22.8.2",
     "@types/qs": "^6.9.15",
     "@types/range-parser": "^1.2.7",
     "@types/send": "^0.17.4",
